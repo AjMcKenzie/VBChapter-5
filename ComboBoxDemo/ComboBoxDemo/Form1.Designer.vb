@@ -26,9 +26,9 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lblCountry = New System.Windows.Forms.Label()
-        Me.lblPlay = New System.Windows.Forms.Label()
         Me.lblArtist = New System.Windows.Forms.Label()
+        Me.lblPlay = New System.Windows.Forms.Label()
+        Me.lblCountry = New System.Windows.Forms.Label()
         Me.btnShow = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -77,14 +77,14 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Your Choices"
         '
-        'lblCountry
+        'lblArtist
         '
-        Me.lblCountry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblCountry.Location = New System.Drawing.Point(29, 34)
-        Me.lblCountry.Name = "lblCountry"
-        Me.lblCountry.Size = New System.Drawing.Size(178, 26)
-        Me.lblCountry.TabIndex = 0
-        Me.lblCountry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblArtist.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblArtist.Location = New System.Drawing.Point(29, 116)
+        Me.lblArtist.Name = "lblArtist"
+        Me.lblArtist.Size = New System.Drawing.Size(178, 26)
+        Me.lblArtist.TabIndex = 4
+        Me.lblArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblPlay
         '
@@ -95,14 +95,14 @@ Partial Class Form1
         Me.lblPlay.TabIndex = 3
         Me.lblPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lblArtist
+        'lblCountry
         '
-        Me.lblArtist.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblArtist.Location = New System.Drawing.Point(29, 116)
-        Me.lblArtist.Name = "lblArtist"
-        Me.lblArtist.Size = New System.Drawing.Size(178, 26)
-        Me.lblArtist.TabIndex = 4
-        Me.lblArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblCountry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblCountry.Location = New System.Drawing.Point(29, 34)
+        Me.lblCountry.Name = "lblCountry"
+        Me.lblCountry.Size = New System.Drawing.Size(178, 26)
+        Me.lblCountry.TabIndex = 0
+        Me.lblCountry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnShow
         '
@@ -134,28 +134,32 @@ Partial Class Form1
         'cboCountries
         '
         Me.cboCountries.FormattingEnabled = True
-        Me.cboCountries.Items.AddRange(New Object() {"USA", "Norway", "Canada", "Sweden"})
+        Me.cboCountries.Items.AddRange(New Object() {"England", "Ireland", "Scotland", "Wales"})
         Me.cboCountries.Location = New System.Drawing.Point(125, 26)
         Me.cboCountries.Name = "cboCountries"
         Me.cboCountries.Size = New System.Drawing.Size(92, 21)
+        Me.cboCountries.Sorted = True
         Me.cboCountries.TabIndex = 7
         '
         'cboArtists
         '
+        Me.cboArtists.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.cboArtists.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboArtists.FormattingEnabled = True
-        Me.cboArtists.Items.AddRange(New Object() {"Computer", "You Mind ", "Why do I have to choose"})
+        Me.cboArtists.Items.AddRange(New Object() {"Michelangelo", "Raphael", "da Vinci"})
         Me.cboArtists.Location = New System.Drawing.Point(125, 116)
         Me.cboArtists.Name = "cboArtists"
-        Me.cboArtists.Size = New System.Drawing.Size(92, 21)
+        Me.cboArtists.Size = New System.Drawing.Size(71, 21)
         Me.cboArtists.TabIndex = 8
         '
         'cboPlays
         '
         Me.cboPlays.FormattingEnabled = True
-        Me.cboPlays.Items.AddRange(New Object() {"A Comedy of Errors", "Hamlet", "Romeo & Juliet", ""})
+        Me.cboPlays.Items.AddRange(New Object() {"A Comedy of Errors", "Hamlet", "Much ado about Nothing", "Romeo & Juliet", "The Merchant of Venice"})
         Me.cboPlays.Location = New System.Drawing.Point(125, 67)
         Me.cboPlays.Name = "cboPlays"
         Me.cboPlays.Size = New System.Drawing.Size(92, 21)
+        Me.cboPlays.Sorted = True
         Me.cboPlays.TabIndex = 9
         '
         'Form1
