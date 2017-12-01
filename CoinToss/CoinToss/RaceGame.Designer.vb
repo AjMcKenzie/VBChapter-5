@@ -40,6 +40,7 @@ Partial Class RaceGame
         Me.radOBet = New System.Windows.Forms.RadioButton()
         Me.radBBet = New System.Windows.Forms.RadioButton()
         Me.radRBet = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picOCar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +52,7 @@ Partial Class RaceGame
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -163,7 +165,7 @@ Partial Class RaceGame
         '
         'btnGo
         '
-        Me.btnGo.Location = New System.Drawing.Point(116, 319)
+        Me.btnGo.Location = New System.Drawing.Point(658, 327)
         Me.btnGo.Name = "btnGo"
         Me.btnGo.Size = New System.Drawing.Size(106, 25)
         Me.btnGo.TabIndex = 11
@@ -172,7 +174,7 @@ Partial Class RaceGame
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(640, 319)
+        Me.btnExit.Location = New System.Drawing.Point(770, 358)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(106, 25)
         Me.btnExit.TabIndex = 12
@@ -181,7 +183,7 @@ Partial Class RaceGame
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(347, 319)
+        Me.btnReset.Location = New System.Drawing.Point(770, 327)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(106, 25)
         Me.btnReset.TabIndex = 13
@@ -191,44 +193,54 @@ Partial Class RaceGame
         'radOBet
         '
         Me.radOBet.AutoSize = True
-        Me.radOBet.Location = New System.Drawing.Point(11, 323)
+        Me.radOBet.Location = New System.Drawing.Point(6, 19)
         Me.radOBet.Name = "radOBet"
-        Me.radOBet.Size = New System.Drawing.Size(96, 17)
+        Me.radOBet.Size = New System.Drawing.Size(79, 17)
         Me.radOBet.TabIndex = 14
         Me.radOBet.TabStop = True
-        Me.radOBet.Text = "Bet On Orange"
+        Me.radOBet.Text = "Orange Car"
         Me.radOBet.UseVisualStyleBackColor = True
         '
         'radBBet
         '
         Me.radBBet.AutoSize = True
-        Me.radBBet.Location = New System.Drawing.Point(11, 346)
+        Me.radBBet.Location = New System.Drawing.Point(6, 43)
         Me.radBBet.Name = "radBBet"
-        Me.radBBet.Size = New System.Drawing.Size(82, 17)
+        Me.radBBet.Size = New System.Drawing.Size(65, 17)
         Me.radBBet.TabIndex = 15
         Me.radBBet.TabStop = True
-        Me.radBBet.Text = "Bet On Blue"
+        Me.radBBet.Text = "Blue Car"
         Me.radBBet.UseVisualStyleBackColor = True
         '
         'radRBet
         '
         Me.radRBet.AutoSize = True
-        Me.radRBet.Location = New System.Drawing.Point(11, 369)
+        Me.radRBet.Location = New System.Drawing.Point(6, 70)
         Me.radRBet.Name = "radRBet"
-        Me.radRBet.Size = New System.Drawing.Size(96, 17)
+        Me.radRBet.Size = New System.Drawing.Size(64, 17)
         Me.radRBet.TabIndex = 16
         Me.radRBet.TabStop = True
-        Me.radRBet.Text = "Bet On Orange"
+        Me.radRBet.Text = "Red Car"
         Me.radRBet.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.radRBet)
+        Me.GroupBox1.Controls.Add(Me.radBBet)
+        Me.GroupBox1.Controls.Add(Me.radOBet)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 280)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(105, 103)
+        Me.GroupBox1.TabIndex = 17
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Betting Station"
         '
         'RaceGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(888, 395)
-        Me.Controls.Add(Me.radRBet)
-        Me.Controls.Add(Me.radBBet)
-        Me.Controls.Add(Me.radOBet)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnGo)
@@ -256,8 +268,9 @@ Partial Class RaceGame
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -277,4 +290,5 @@ Partial Class RaceGame
     Friend WithEvents radOBet As System.Windows.Forms.RadioButton
     Friend WithEvents radBBet As System.Windows.Forms.RadioButton
     Friend WithEvents radRBet As System.Windows.Forms.RadioButton
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class
