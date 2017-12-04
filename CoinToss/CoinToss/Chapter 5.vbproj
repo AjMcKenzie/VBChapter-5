@@ -136,6 +136,9 @@
     <EmbeddedResource Include="RaceGame.resx">
       <DependentUpon>RaceGame.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RockPaperScissors.resx">
+      <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">

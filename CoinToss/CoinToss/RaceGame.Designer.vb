@@ -32,8 +32,6 @@ Partial Class RaceGame
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.btnGo = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
@@ -41,6 +39,13 @@ Partial Class RaceGame
         Me.radBBet = New System.Windows.Forms.RadioButton()
         Me.radRBet = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblORaceS = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lblBRaceS = New System.Windows.Forms.Label()
+        Me.lblRRaceS = New System.Windows.Forms.Label()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.lblWinner = New System.Windows.Forms.Label()
+        Me.lblBet = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picOCar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,15 +55,15 @@ Partial Class RaceGame
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(709, -1)
+        Me.PictureBox1.Location = New System.Drawing.Point(605, -1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(37, 265)
         Me.PictureBox1.TabIndex = 0
@@ -143,26 +148,6 @@ Partial Class RaceGame
         Me.PictureBox6.TabIndex = 8
         Me.PictureBox6.TabStop = False
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(515, 229)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(111, 35)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 9
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(619, 229)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(111, 35)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 10
-        Me.PictureBox8.TabStop = False
-        '
         'btnGo
         '
         Me.btnGo.Location = New System.Drawing.Point(658, 327)
@@ -235,26 +220,95 @@ Partial Class RaceGame
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Betting Station"
         '
+        'lblORaceS
+        '
+        Me.lblORaceS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblORaceS.Location = New System.Drawing.Point(6, 25)
+        Me.lblORaceS.Name = "lblORaceS"
+        Me.lblORaceS.Size = New System.Drawing.Size(132, 25)
+        Me.lblORaceS.TabIndex = 18
+        Me.lblORaceS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.lblRRaceS)
+        Me.GroupBox2.Controls.Add(Me.lblBRaceS)
+        Me.GroupBox2.Controls.Add(Me.lblORaceS)
+        Me.GroupBox2.Location = New System.Drawing.Point(156, 280)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(313, 87)
+        Me.GroupBox2.TabIndex = 19
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Scores"
+        '
+        'lblBRaceS
+        '
+        Me.lblBRaceS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblBRaceS.Location = New System.Drawing.Point(6, 59)
+        Me.lblBRaceS.Name = "lblBRaceS"
+        Me.lblBRaceS.Size = New System.Drawing.Size(132, 25)
+        Me.lblBRaceS.TabIndex = 19
+        Me.lblBRaceS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblRRaceS
+        '
+        Me.lblRRaceS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblRRaceS.Location = New System.Drawing.Point(154, 25)
+        Me.lblRRaceS.Name = "lblRRaceS"
+        Me.lblRRaceS.Size = New System.Drawing.Size(132, 25)
+        Me.lblRRaceS.TabIndex = 20
+        Me.lblRRaceS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(508, 229)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(111, 35)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 20
+        Me.PictureBox7.TabStop = False
+        '
+        'lblWinner
+        '
+        Me.lblWinner.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWinner.Location = New System.Drawing.Point(475, 299)
+        Me.lblWinner.Name = "lblWinner"
+        Me.lblWinner.Size = New System.Drawing.Size(113, 31)
+        Me.lblWinner.TabIndex = 21
+        Me.lblWinner.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblBet
+        '
+        Me.lblBet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblBet.Location = New System.Drawing.Point(475, 343)
+        Me.lblBet.Name = "lblBet"
+        Me.lblBet.Size = New System.Drawing.Size(113, 31)
+        Me.lblBet.TabIndex = 22
+        Me.lblBet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'RaceGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(888, 395)
+        Me.ClientSize = New System.Drawing.Size(888, 398)
+        Me.Controls.Add(Me.lblBet)
+        Me.Controls.Add(Me.lblWinner)
+        Me.Controls.Add(Me.picBCar)
+        Me.Controls.Add(Me.picOCar)
+        Me.Controls.Add(Me.picRCar)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnGo)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.picBCar)
-        Me.Controls.Add(Me.picRCar)
-        Me.Controls.Add(Me.picOCar)
         Me.Name = "RaceGame"
         Me.Text = "RaceGame"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -266,10 +320,10 @@ Partial Class RaceGame
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -282,8 +336,6 @@ Partial Class RaceGame
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
     Friend WithEvents btnGo As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnReset As System.Windows.Forms.Button
@@ -291,4 +343,11 @@ Partial Class RaceGame
     Friend WithEvents radBBet As System.Windows.Forms.RadioButton
     Friend WithEvents radRBet As System.Windows.Forms.RadioButton
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents lblORaceS As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents lblRRaceS As System.Windows.Forms.Label
+    Friend WithEvents lblBRaceS As System.Windows.Forms.Label
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents lblWinner As System.Windows.Forms.Label
+    Friend WithEvents lblBet As System.Windows.Forms.Label
 End Class

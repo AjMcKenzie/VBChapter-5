@@ -26,6 +26,7 @@ Partial Class Menu
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnCoinToss = New System.Windows.Forms.Button()
         Me.btnRaceGame = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnLightGame
@@ -64,11 +65,21 @@ Partial Class Menu
         Me.btnRaceGame.Text = "Race Game"
         Me.btnRaceGame.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(136, 184)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 48)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Rock, Paper, Scissors"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 321)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRaceGame)
         Me.Controls.Add(Me.btnCoinToss)
         Me.Controls.Add(Me.btnClose)
@@ -82,4 +93,5 @@ Partial Class Menu
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnCoinToss As System.Windows.Forms.Button
     Friend WithEvents btnRaceGame As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

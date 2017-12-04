@@ -18,4 +18,9 @@
         Dim Box = New RaceGame()
         Box.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim Box = New RockPaperScissors()
+        Box.Show()
+    End Sub
 End Class
