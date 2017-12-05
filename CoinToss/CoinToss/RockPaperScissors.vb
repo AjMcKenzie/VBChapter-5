@@ -1,6 +1,6 @@
 ﻿Public Class RockPaperScissors
 
-    Private Sub btnScissors_Click(sender As Object, e As EventArgs) Handles btnScissors.Click
+    Private Sub picScissors_Click(sender As Object, e As EventArgs) Handles picScissors.Click
         Dim intShoot As Integer
         Dim rand As New Random
 
@@ -10,15 +10,15 @@
         '2 Scissors
 
         If intShoot = 0 Then
-            lblResult.Text = ("Pc Choose- Rock. You Lose!")
+            lblResult.Text = ("Pc VS Player! Pc Choose- Rock. You Choose- Scissors. You Lose!")
         ElseIf intShoot = 1 Then
-            lblResult.Text = ("Pc Choose- Paper. You Win!")
+            lblResult.Text = ("Pc VS Player! Pc Choose- Paper. You Choose- Scissors. You Win!")
         ElseIf intShoot = 2 Then
-            lblResult.Text = ("Pc Choose- Scissors. You Tie!")
+            lblResult.Text = ("Pc VS Player! Pc Choose- Scissors. You Choose- Scissors. You Tie!")
         End If
     End Sub
 
-    Private Sub btnPaper_Click(sender As Object, e As EventArgs) Handles btnPaper.Click
+    Private Sub picPaper_Click(sender As Object, e As EventArgs) Handles picPaper.Click
         Dim intShoot As Integer
         Dim rand As New Random
 
@@ -28,15 +28,15 @@
         '2 Scissors
 
         If intShoot = 0 Then
-            lblResult.Text = ("Pc Choose- Rock. You Win!")
+            lblResult.Text = ("Pc Choose- Rock. You Choose- Paper. You Win!")
         ElseIf intShoot = 1 Then
-            lblResult.Text = ("Pc Choose- Paper. You Tie!")
+            lblResult.Text = ("Pc Choose- Paper. You Choose- Paper. You Tie!")
         ElseIf intShoot = 2 Then
-            lblResult.Text = ("Pc Choose- Scissors. You Lose!")
+            lblResult.Text = ("Pc Choose- Scissors. You Choose- Paper. You Lose!")
         End If
     End Sub
 
-    Private Sub btnRock_Click(sender As Object, e As EventArgs) Handles btnRock.Click
+    Private Sub picRock_Click(sender As Object, e As EventArgs) Handles picRock.Click
         Dim intShoot As Integer
         Dim rand As New Random
 
@@ -46,11 +46,15 @@
         '2 Scissors
 
         If intShoot = 0 Then
-            lblResult.Text = ("Pc Choose- Rock. You Tie!")
+            lblResult.Text = ("Pc Choose- Rock. You Choose- Rock. You Tie!")
         ElseIf intShoot = 1 Then
-            lblResult.Text = ("Pc Choose- Paper. You Lose!")
+            lblResult.Text = ("Pc Choose- Paper. You Choose- Rock. You Lose!")
         ElseIf intShoot = 2 Then
-            lblResult.Text = ("Pc Choose- Scissors. You Win!")
+            lblResult.Text = ("Pc Choose- Scissors. You Choose- Rock. You Win!")
         End If
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
     End Sub
 End Class
