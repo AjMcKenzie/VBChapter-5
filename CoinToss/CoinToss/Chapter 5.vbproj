@@ -110,6 +110,12 @@
     <Compile Include="RaceGame.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RightTriangle.Designer.vb">
+      <DependentUpon>RightTriangle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RightTriangle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RockPaperScissors.Designer.vb">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RaceGame.resx">
       <DependentUpon>RaceGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RightTriangle.resx">
+      <DependentUpon>RightTriangle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
