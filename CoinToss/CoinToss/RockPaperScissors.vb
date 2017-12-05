@@ -18,7 +18,7 @@
         ElseIf intShoot = 2 Then
             lblResult.Text = ("                               Pc VS Player!" & vbCrLf & "        Pc Choose- Scissors. You Choose- Scissors." & vbCrLf & "                                  You Tie!")
         End If
-        lblWins.Text = intScore.ToString("n")
+        lblWins.Text = intScore.ToString
     End Sub
 
     Private Sub picPaper_Click(sender As Object, e As EventArgs) Handles picPaper.Click
@@ -38,7 +38,7 @@
         ElseIf intShoot = 2 Then
             lblResult.Text = ("                               Pc VS Player!" & vbCrLf & "         Pc Choose- Scissors. You Choose- Paper." & vbCrLf & "                                   You Lose!")
         End If
-        lblWins.Text = intScore.ToString("n")
+        lblWins.Text = intScore.ToString
     End Sub
 
     Private Sub picRock_Click(sender As Object, e As EventArgs) Handles picRock.Click
@@ -58,7 +58,7 @@
             lblResult.Text = ("                               Pc VS Player!" & vbCrLf & "        Pc Choose- Scissors. You Choose- Rock." & vbCrLf & "                               You Win!")
             intScore = intScore + 1
         End If
-        lblWins.Text = intScore.ToString("n")
+        lblWins.Text = intScore.ToString
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
