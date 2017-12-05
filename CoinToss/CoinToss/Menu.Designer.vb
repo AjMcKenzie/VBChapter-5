@@ -32,7 +32,7 @@ Partial Class Menu
         '
         'btnLightGame
         '
-        Me.btnLightGame.Location = New System.Drawing.Point(136, 97)
+        Me.btnLightGame.Location = New System.Drawing.Point(136, 84)
         Me.btnLightGame.Name = "btnLightGame"
         Me.btnLightGame.Size = New System.Drawing.Size(75, 23)
         Me.btnLightGame.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Menu
         '
         'btnCoinToss
         '
-        Me.btnCoinToss.Location = New System.Drawing.Point(136, 126)
+        Me.btnCoinToss.Location = New System.Drawing.Point(136, 113)
         Me.btnCoinToss.Name = "btnCoinToss"
         Me.btnCoinToss.Size = New System.Drawing.Size(75, 23)
         Me.btnCoinToss.TabIndex = 2
@@ -59,7 +59,7 @@ Partial Class Menu
         '
         'btnRaceGame
         '
-        Me.btnRaceGame.Location = New System.Drawing.Point(136, 155)
+        Me.btnRaceGame.Location = New System.Drawing.Point(136, 142)
         Me.btnRaceGame.Name = "btnRaceGame"
         Me.btnRaceGame.Size = New System.Drawing.Size(75, 23)
         Me.btnRaceGame.TabIndex = 3
@@ -68,7 +68,7 @@ Partial Class Menu
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(136, 184)
+        Me.Button1.Location = New System.Drawing.Point(136, 171)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 48)
         Me.Button1.TabIndex = 4
@@ -77,7 +77,7 @@ Partial Class Menu
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(136, 238)
+        Me.Button2.Location = New System.Drawing.Point(136, 225)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 37)
         Me.Button2.TabIndex = 5
