@@ -9,7 +9,7 @@
             intSum += i
         Next
 
-        MessageBox.Show(intSum)
+        MessageBox.Show("The sum of numbers 1 through " & input & " is " & intSum)
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click

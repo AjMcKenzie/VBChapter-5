@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlackMarket\BlackGamble.Designer.vb">
+      <DependentUpon>BlackGamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlackMarket\BlackGamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CoinToss.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BlackMarket\BlackGamble.resx">
+      <DependentUpon>BlackGamble.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CoinToss.resx">
       <DependentUpon>CoinToss.vb</DependentUpon>
     </EmbeddedResource>
