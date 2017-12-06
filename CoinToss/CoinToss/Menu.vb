@@ -32,4 +32,9 @@
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         InputBox("Enter name:")
     End Sub
+
+    Private Sub btnSumOfNumbers_Click(sender As Object, e As EventArgs) Handles btnSumOfNumbers.Click
+        Dim Box = New SumOfNumbers()
+        Box.Show()
+    End Sub
 End Class

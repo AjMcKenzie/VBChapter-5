@@ -122,6 +122,12 @@
     <Compile Include="RockPaperScissors.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SumOfNumbers.Designer.vb">
+      <DependentUpon>SumOfNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SumOfNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CoinToss.resx">
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumOfNumbers.resx">
+      <DependentUpon>SumOfNumbers.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

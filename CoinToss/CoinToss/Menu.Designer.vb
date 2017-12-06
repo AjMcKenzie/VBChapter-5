@@ -29,6 +29,7 @@ Partial Class Menu
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnSumOfNumbers = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnLightGame
@@ -42,7 +43,7 @@ Partial Class Menu
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(136, 286)
+        Me.btnClose.Location = New System.Drawing.Point(290, 286)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 1
@@ -95,11 +96,21 @@ Partial Class Menu
         Me.Label1.Text = "Menu"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnSumOfNumbers
+        '
+        Me.btnSumOfNumbers.Location = New System.Drawing.Point(136, 267)
+        Me.btnSumOfNumbers.Name = "btnSumOfNumbers"
+        Me.btnSumOfNumbers.Size = New System.Drawing.Size(75, 42)
+        Me.btnSumOfNumbers.TabIndex = 7
+        Me.btnSumOfNumbers.Text = "Sum of Numbers"
+        Me.btnSumOfNumbers.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 321)
+        Me.Controls.Add(Me.btnSumOfNumbers)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -119,4 +130,5 @@ Partial Class Menu
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnSumOfNumbers As System.Windows.Forms.Button
 End Class
