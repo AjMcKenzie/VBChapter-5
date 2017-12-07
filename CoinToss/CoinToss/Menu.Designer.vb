@@ -31,6 +31,8 @@ Partial Class Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSumOfNumbers = New System.Windows.Forms.Button()
         Me.btnDistanceCalculator = New System.Windows.Forms.Button()
+        Me.btnPopulation = New System.Windows.Forms.Button()
+        Me.btnRNG = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnLightGame
@@ -47,7 +49,7 @@ Partial Class Menu
         Me.btnClose.Location = New System.Drawing.Point(290, 286)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
-        Me.btnClose.TabIndex = 1
+        Me.btnClose.TabIndex = 8
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
@@ -56,7 +58,7 @@ Partial Class Menu
         Me.btnCoinToss.Location = New System.Drawing.Point(136, 113)
         Me.btnCoinToss.Name = "btnCoinToss"
         Me.btnCoinToss.Size = New System.Drawing.Size(75, 23)
-        Me.btnCoinToss.TabIndex = 2
+        Me.btnCoinToss.TabIndex = 1
         Me.btnCoinToss.Text = "Coin Toss"
         Me.btnCoinToss.UseVisualStyleBackColor = True
         '
@@ -65,7 +67,7 @@ Partial Class Menu
         Me.btnRaceGame.Location = New System.Drawing.Point(136, 142)
         Me.btnRaceGame.Name = "btnRaceGame"
         Me.btnRaceGame.Size = New System.Drawing.Size(75, 23)
-        Me.btnRaceGame.TabIndex = 3
+        Me.btnRaceGame.TabIndex = 2
         Me.btnRaceGame.Text = "Race Game"
         Me.btnRaceGame.UseVisualStyleBackColor = True
         '
@@ -74,7 +76,7 @@ Partial Class Menu
         Me.Button1.Location = New System.Drawing.Point(136, 171)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 48)
-        Me.Button1.TabIndex = 4
+        Me.Button1.TabIndex = 3
         Me.Button1.Text = "Rock, Paper, Scissors"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -83,7 +85,7 @@ Partial Class Menu
         Me.Button2.Location = New System.Drawing.Point(136, 225)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 37)
-        Me.Button2.TabIndex = 5
+        Me.Button2.TabIndex = 4
         Me.Button2.Text = "Right Trangle"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -102,7 +104,7 @@ Partial Class Menu
         Me.btnSumOfNumbers.Location = New System.Drawing.Point(136, 267)
         Me.btnSumOfNumbers.Name = "btnSumOfNumbers"
         Me.btnSumOfNumbers.Size = New System.Drawing.Size(75, 42)
-        Me.btnSumOfNumbers.TabIndex = 7
+        Me.btnSumOfNumbers.TabIndex = 5
         Me.btnSumOfNumbers.Text = "Sum of Numbers"
         Me.btnSumOfNumbers.UseVisualStyleBackColor = True
         '
@@ -111,15 +113,35 @@ Partial Class Menu
         Me.btnDistanceCalculator.Location = New System.Drawing.Point(217, 84)
         Me.btnDistanceCalculator.Name = "btnDistanceCalculator"
         Me.btnDistanceCalculator.Size = New System.Drawing.Size(75, 42)
-        Me.btnDistanceCalculator.TabIndex = 8
+        Me.btnDistanceCalculator.TabIndex = 6
         Me.btnDistanceCalculator.Text = "Distance Calculator"
         Me.btnDistanceCalculator.UseVisualStyleBackColor = True
+        '
+        'btnPopulation
+        '
+        Me.btnPopulation.Location = New System.Drawing.Point(217, 142)
+        Me.btnPopulation.Name = "btnPopulation"
+        Me.btnPopulation.Size = New System.Drawing.Size(75, 23)
+        Me.btnPopulation.TabIndex = 7
+        Me.btnPopulation.Text = "Population"
+        Me.btnPopulation.UseVisualStyleBackColor = True
+        '
+        'btnRNG
+        '
+        Me.btnRNG.Location = New System.Drawing.Point(217, 171)
+        Me.btnRNG.Name = "btnRNG"
+        Me.btnRNG.Size = New System.Drawing.Size(75, 48)
+        Me.btnRNG.TabIndex = 9
+        Me.btnRNG.Text = "Random Number Game"
+        Me.btnRNG.UseVisualStyleBackColor = True
         '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 321)
+        Me.Controls.Add(Me.btnRNG)
+        Me.Controls.Add(Me.btnPopulation)
         Me.Controls.Add(Me.btnDistanceCalculator)
         Me.Controls.Add(Me.btnSumOfNumbers)
         Me.Controls.Add(Me.Label1)
@@ -143,4 +165,6 @@ Partial Class Menu
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnSumOfNumbers As System.Windows.Forms.Button
     Friend WithEvents btnDistanceCalculator As System.Windows.Forms.Button
+    Friend WithEvents btnPopulation As System.Windows.Forms.Button
+    Friend WithEvents btnRNG As System.Windows.Forms.Button
 End Class

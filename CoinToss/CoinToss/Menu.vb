@@ -44,4 +44,14 @@
         Dim Box = New DistanceCalculator()
         Box.Show()
     End Sub
+
+    Private Sub btnPopulation_Click(sender As Object, e As EventArgs) Handles btnPopulation.Click
+        Dim Box = New Population()
+        Box.Show()
+    End Sub
+
+    Private Sub btnRNG_Click(sender As Object, e As EventArgs) Handles btnRNG.Click
+        Dim Box = New RandomNumberGame()
+        Box.Show()
+    End Sub
 End Class
