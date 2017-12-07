@@ -30,6 +30,7 @@ Partial Class Menu
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSumOfNumbers = New System.Windows.Forms.Button()
+        Me.btnDistanceCalculator = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnLightGame
@@ -105,11 +106,21 @@ Partial Class Menu
         Me.btnSumOfNumbers.Text = "Sum of Numbers"
         Me.btnSumOfNumbers.UseVisualStyleBackColor = True
         '
+        'btnDistanceCalculator
+        '
+        Me.btnDistanceCalculator.Location = New System.Drawing.Point(217, 84)
+        Me.btnDistanceCalculator.Name = "btnDistanceCalculator"
+        Me.btnDistanceCalculator.Size = New System.Drawing.Size(75, 42)
+        Me.btnDistanceCalculator.TabIndex = 8
+        Me.btnDistanceCalculator.Text = "Distance Calculator"
+        Me.btnDistanceCalculator.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 321)
+        Me.Controls.Add(Me.btnDistanceCalculator)
         Me.Controls.Add(Me.btnSumOfNumbers)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
@@ -131,4 +142,5 @@ Partial Class Menu
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnSumOfNumbers As System.Windows.Forms.Button
+    Friend WithEvents btnDistanceCalculator As System.Windows.Forms.Button
 End Class

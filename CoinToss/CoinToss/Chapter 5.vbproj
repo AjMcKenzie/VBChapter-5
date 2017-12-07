@@ -83,6 +83,12 @@
       <DependentUpon>CoinToss.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DistanceCalculator.Designer.vb">
+      <DependentUpon>DistanceCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LightOnLightOff.Designer.vb">
       <DependentUpon>LightOnLightOff.vb</DependentUpon>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CoinToss.resx">
       <DependentUpon>CoinToss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceCalculator.resx">
+      <DependentUpon>DistanceCalculator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LightOnLightOff.resx">
       <DependentUpon>LightOnLightOff.vb</DependentUpon>

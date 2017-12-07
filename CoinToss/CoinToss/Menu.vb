@@ -39,4 +39,9 @@
         Dim Box = New SumOfNumbers()
         Box.Show()
     End Sub
+
+    Private Sub btnDistanceCalculator_Click(sender As Object, e As EventArgs) Handles btnDistanceCalculator.Click
+        Dim Box = New DistanceCalculator()
+        Box.Show()
+    End Sub
 End Class
