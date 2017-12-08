@@ -25,7 +25,7 @@
         Do While userGuess <> PCNumber
             RNG()
         Loop
-        lblGotWrong.Text = ("You got " & Wrong.ToString & " wrong.")
+        lblGotWrong.Text = ("You got " & Wrong.ToString & " guesses wrong.")
         lblAwnser.Text = ("Correct! The number was " & PCNumber & "!")
     End Sub
 
