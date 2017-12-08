@@ -23,74 +23,65 @@ Partial Class RandomNumberGame
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnGuess = New System.Windows.Forms.Button()
-        Me.txtGuess = New System.Windows.Forms.TextBox()
         Me.lblAwnser = New System.Windows.Forms.Label()
-        Me.lblWrong = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblGotWrong = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGuess
         '
-        Me.btnGuess.Location = New System.Drawing.Point(62, 133)
+        Me.btnGuess.Location = New System.Drawing.Point(44, 129)
         Me.btnGuess.Name = "btnGuess"
         Me.btnGuess.Size = New System.Drawing.Size(89, 23)
         Me.btnGuess.TabIndex = 0
         Me.btnGuess.Text = "Guess"
         Me.btnGuess.UseVisualStyleBackColor = True
         '
-        'txtGuess
-        '
-        Me.txtGuess.Location = New System.Drawing.Point(62, 95)
-        Me.txtGuess.Name = "txtGuess"
-        Me.txtGuess.Size = New System.Drawing.Size(89, 20)
-        Me.txtGuess.TabIndex = 1
-        '
         'lblAwnser
         '
         Me.lblAwnser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblAwnser.Location = New System.Drawing.Point(37, 37)
+        Me.lblAwnser.Location = New System.Drawing.Point(12, 34)
         Me.lblAwnser.Name = "lblAwnser"
         Me.lblAwnser.Size = New System.Drawing.Size(165, 44)
         Me.lblAwnser.TabIndex = 2
         Me.lblAwnser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lblWrong
+        'lblGotWrong
         '
-        Me.lblWrong.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblWrong.Location = New System.Drawing.Point(282, 131)
-        Me.lblWrong.Name = "lblWrong"
-        Me.lblWrong.Size = New System.Drawing.Size(55, 26)
-        Me.lblWrong.TabIndex = 3
-        Me.lblWrong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label1
-        '
-        Me.Label1.Location = New System.Drawing.Point(246, 114)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(149, 16)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "How many you got wrong:"
+        Me.lblGotWrong.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblGotWrong.Location = New System.Drawing.Point(12, 90)
+        Me.lblGotWrong.Name = "lblGotWrong"
+        Me.lblGotWrong.Size = New System.Drawing.Size(165, 27)
+        Me.lblGotWrong.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(34, 9)
+        Me.Label2.Location = New System.Drawing.Point(9, 7)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(179, 13)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Guess a number between 1 and 100"
         '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(44, 158)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(89, 23)
+        Me.btnExit.TabIndex = 6
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'RandomNumberGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(423, 168)
+        Me.ClientSize = New System.Drawing.Size(203, 188)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.lblWrong)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblGotWrong)
         Me.Controls.Add(Me.lblAwnser)
-        Me.Controls.Add(Me.txtGuess)
         Me.Controls.Add(Me.btnGuess)
         Me.Name = "RandomNumberGame"
         Me.Text = "RandomNumberGame"
@@ -99,9 +90,8 @@ Partial Class RandomNumberGame
 
     End Sub
     Friend WithEvents btnGuess As System.Windows.Forms.Button
-    Friend WithEvents txtGuess As System.Windows.Forms.TextBox
     Friend WithEvents lblAwnser As System.Windows.Forms.Label
-    Friend WithEvents lblWrong As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblGotWrong As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 End Class
