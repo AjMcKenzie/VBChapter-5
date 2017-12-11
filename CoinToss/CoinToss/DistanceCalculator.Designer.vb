@@ -22,19 +22,19 @@ Partial Class DistanceCalculator
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.listDistance = New System.Windows.Forms.ListBox()
+        Me.lstDistance = New System.Windows.Forms.ListBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'listDistance
+        'lstDistance
         '
-        Me.listDistance.FormattingEnabled = True
-        Me.listDistance.Location = New System.Drawing.Point(28, 28)
-        Me.listDistance.Name = "listDistance"
-        Me.listDistance.Size = New System.Drawing.Size(272, 212)
-        Me.listDistance.TabIndex = 0
+        Me.lstDistance.FormattingEnabled = True
+        Me.lstDistance.Location = New System.Drawing.Point(28, 28)
+        Me.lstDistance.Name = "lstDistance"
+        Me.lstDistance.Size = New System.Drawing.Size(272, 212)
+        Me.lstDistance.TabIndex = 0
         '
         'btnCalculate
         '
@@ -71,13 +71,13 @@ Partial Class DistanceCalculator
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCalculate)
-        Me.Controls.Add(Me.listDistance)
+        Me.Controls.Add(Me.lstDistance)
         Me.Name = "DistanceCalculator"
         Me.Text = "DistanceCalculator"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents listDistance As System.Windows.Forms.ListBox
+    Friend WithEvents lstDistance As System.Windows.Forms.ListBox
     Friend WithEvents btnCalculate As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
