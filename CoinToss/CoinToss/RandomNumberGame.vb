@@ -16,8 +16,6 @@
         End If
     End Sub
 
-
-
     Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
 
         PCNumber = rand.Next(100)
