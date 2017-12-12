@@ -1,30 +1,20 @@
 ﻿Public Class Population
 
     Private Sub btnPredict_Click(sender As Object, e As EventArgs) Handles btnPredict.Click
-        Dim NumOrganisms As Integer
-        Dim AverageDaily As Decimal
-        Dim NumDaysMultiply As Integer
-        Dim NumDM As Integer
-        Dim Growth As Decimal
-        Dim AVGDays As Decimal
-
-        NumOrganisms = (cboStartingNumber.Text)
-        AverageDaily = (txtDailyIncrease.Text)
-        NumDaysMultiply = (cboDaysToMultiply.Text)
-
-        Do While NumDM < NumDaysMultiply
-            NumDM = NumDM + 1
-            lstPredict.Items.Add(NumDM)
-           
-        Loop
-
-        AVGDays = AverageDaily * NumOrganisms / 100
-        Growth = AVGDays + NumDM
-        lstPredict.Items.Add(Growth)
+        Dim intCount As Integer = 1
+        Dim dblTotal As Double
 
 
-       
-       
+        lstPredict.Items.Add("Day       Approximate Population")
+        lstPredict.Items.Add("-----------------------------------")
+        dblTotal = 2
+        lstPredict.Items.Add(intCount & "         " & cboStartingNumber.Text)
+        For intCount = intCount + 1 To cboDaysToMultiply.Text
+            dblTotal = (txtDailyIncrease.Text / 100) * dblTotal + dblTotal
+            lstPredict.Items.Add(intCount.ToString & "        " & dblTotal.ToString("n"))
+        Next
+
+
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click

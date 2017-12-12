@@ -107,7 +107,7 @@ Partial Class Population
         '
         Me.cboStartingNumber.FormattingEnabled = True
         Me.cboStartingNumber.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        Me.cboStartingNumber.Location = New System.Drawing.Point(12, 67)
+        Me.cboStartingNumber.Location = New System.Drawing.Point(15, 66)
         Me.cboStartingNumber.Name = "cboStartingNumber"
         Me.cboStartingNumber.Size = New System.Drawing.Size(102, 21)
         Me.cboStartingNumber.TabIndex = 0
